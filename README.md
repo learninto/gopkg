@@ -11,6 +11,13 @@ The libs for Go.
 - [License](#license)
 
 
+-------------------------
+## Installation
+
+```
+  go get -u github.com/learninto/go-libs
+```
+
 
 -------------------------
 ## License
