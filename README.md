@@ -8,6 +8,7 @@
 The libs for Go.
 
 -------------------------
+- [Installation](#installation)
 - [License](#license)
 
 
