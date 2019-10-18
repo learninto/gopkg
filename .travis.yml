@@ -16,7 +16,7 @@ before_script:
   - go test -v ./...
 
 script:
-  - $GOPATH/bin/goveralls -service=travis-ci
+  - go test -v -covermode=count -coverprofile=coverage.out
   - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken aNGUU4KILuuMJa12HE39ltKOwFl46cnpl
 
 after_success:
