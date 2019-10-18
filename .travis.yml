@@ -1,4 +1,5 @@
 language: go
+sudo: false
 
 go:
   - 1.13.x
@@ -7,11 +8,14 @@ go:
   - 1.10.x
   - tip
 
+before_install:
+  - go get github.com/mattn/goveralls
+
 before_script:
   - go test -v ./...
 
 script:
-  - go test -v -covermode=count -coverprofile=coverage.out
+  - $GOPATH/bin/goveralls -service=travis-ci
   - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken aNGUU4KILuuMJa12HE39ltKOwFl46cnpl
 
 after_success:
