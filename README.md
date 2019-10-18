@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://goreportcard.com/report/github.com/learninto/go-libs"><img src="https://goreportcard.com/badge/github.com/learninto/go-libs"></a>
   <a href="https://travis-ci.org/learninto/go-libs"><img src="https://travis-ci.org/learninto/go-libs.svg?branch=master"></a>
+  <a href="https://codebeat.co/projects/github-com-learninto-go-libs-master"><img alt="codebeat badge" src="https://codebeat.co/badges/b5ef243a-d36f-4e74-86e9-6c499c01223d" /></a>
 </p>
 
 # GO libs
