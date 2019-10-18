@@ -3,16 +3,12 @@ sudo: false
 
 go:
   - 1.13.3
-  - tip
-
-before_install:
-  - go get github.com/mattn/goveralls
-
-before_script:
-  - go test -v ./...
+  - 1.12.12
+  - 1.11.13
+  - 1.10.8
 
 script:
-  - $GOPATH/bin/goveralls -service=travis-pro
+  - go test -v ./...
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
