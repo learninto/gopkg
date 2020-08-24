@@ -1,4 +1,4 @@
-module github.com/learninto/go-libs
+module github.com/learninto/gopkg
 
 go 1.14
 
