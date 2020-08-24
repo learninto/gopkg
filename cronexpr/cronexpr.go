@@ -1,6 +1,6 @@
 /*!
  *
- * Project: github.com/kingstar-go/commons/cronexpr
+ * Project: github.com/github.com/learninto/gopkg/cronexpr
  * File: cronexpr.go
  * Version: 1.0
  * License: pick the one which suits you :
@@ -14,11 +14,12 @@ package cronexpr
 
 import (
 	"errors"
-	"kingstar-go/commons/timelib"
 	"regexp"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/learninto/gopkg/timelib"
 )
 
 /******************************************************************************/

@@ -1,8 +1,9 @@
 package structlib
 
 import (
-	"kingstar-go/commons/namedlib"
 	"reflect"
+
+	"github.com/learninto/gopkg/namedlib"
 )
 
 // https://www.sozhidao.com/articles/260
