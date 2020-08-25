@@ -20,7 +20,7 @@ The libs for Go.
 ## Installation
 
 ```
-  go get -u github.com/learninto/go-pkg
+  go get -u github.com/learninto/gopkg
 ```
 
 
