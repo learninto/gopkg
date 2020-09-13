@@ -1,4 +1,4 @@
-[![Go](https://github.com/learninto/go-zero/workflows/Go/badge.svg?branch=master)](https://github.com/learninto/gopkg/actions)
+[![Go](https://goreportcard.com/badge/github.com/learninto/gopkg)](https://goreportcard.com/report/github.com/learninto/gopkg)
 [![codecov](https://codecov.io/gh/learninto/gopkg/branch/master/graph/badge.svg)](https://codecov.io/gh/learninto/gopkg)
 
 <a href="https://goreportcard.com/report/github.com/learninto/gopkg"><img src="https://goreportcard.com/badge/github.com/learninto/gopkg"></a>
