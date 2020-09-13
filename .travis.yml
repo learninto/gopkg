@@ -11,12 +11,9 @@ go:
 
 before_install:
   - go get github.com/mattn/goveralls
-  - go mod download
-  - go mod vendor
 
 script:
   - go test -v ./...
   - $HOME/gopath/bin/goveralls -service=travis-ci
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
