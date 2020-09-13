@@ -10,12 +10,8 @@ go:
   - tip
 
 before_install:
-  - go get github.com/mattn/goveralls
 
 script:
   - go test -v ./...
-  - $HOME/gopath/bin/goveralls -service=travis-ci
 
 after_success:
-  - export CODECOV_TOKEN="1072385b-73f1-4896-9473-7046dd354862"
-  - bash <(curl -s https://codecov.io/bash)
