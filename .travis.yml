@@ -11,6 +11,7 @@ before_install:
 
 script:
   - go test -v ./...
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
   - $HOME/gopath/bin/goveralls -service=travis-ci
 
 after_success:
