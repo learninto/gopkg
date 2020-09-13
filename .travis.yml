@@ -8,9 +8,9 @@ go:
 
 before_install:
   - go get github.com/mattn/goveralls
+  - go get -t -v ./...
 
 script:
-  - go test -v ./...
   - go test -race -coverprofile=coverage.txt -covermode=atomic
   - $HOME/gopath/bin/goveralls -service=travis-ci
 
