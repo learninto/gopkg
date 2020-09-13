@@ -5,14 +5,18 @@ import (
 	"fmt"
 	"math"
 	"strconv"
+	"strings"
 )
 
 // 保留指定小数
 func Decimal(f float64, d int) float64 {
-	if d <= 0 {
-		d = 2
-	}
-	f, _ = strconv.ParseFloat(fmt.Sprintf("%."+string(d)+"f", f), 64)
+
+	format := strings.Builder{}
+	format.WriteString("%.")
+	format.WriteString(strconv.Itoa(d))
+	format.WriteString("f")
+
+	f, _ = strconv.ParseFloat(fmt.Sprintf(format.String(), f), 64)
 	return f
 }
 
