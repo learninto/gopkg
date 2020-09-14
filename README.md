@@ -1,7 +1,6 @@
 <p align="center">
     <a href="https://codecov.io/gh/learninto/gopkg"><img src="https://codecov.io/gh/learninto/gopkg/branch/master/graph/badge.svg"></a>
     <a href="https://goreportcard.com/report/github.com/learninto/gopkg"><img src="https://goreportcard.com/badge/github.com/learninto/gopkg"></a>
-    <a href="https://goreportcard.com/report/github.com/learninto/gopkg"><img src="https://goreportcard.com/badge/github.com/learninto/gopkg"></a>
     <a href="https://travis-ci.org/learninto/gopkg"><img src="https://travis-ci.org/learninto/gopkg.svg?branch=master"></a>
     <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Flearninto%2Fgopkg?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Flearninto%2Fgopkg.svg?type=shield"/></a>
     <a href="https://codebeat.co/projects/github-com-learninto-gopkg-master"><img alt="codebeat badge" src="https://codebeat.co/badges/b5ef243a-d36f-4e74-86e9-6c499c01223d"/></a>
