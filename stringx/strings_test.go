@@ -334,3 +334,8 @@ func TestUnion(t *testing.T) {
 	assert.True(t, contains("three"))
 	assert.True(t, contains("four"))
 }
+
+func TestGetAxis(t *testing.T) {
+	axis := GetAxis(111)
+	assert.Equal(t, axis, "DH")
+}

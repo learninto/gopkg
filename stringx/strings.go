@@ -129,3 +129,16 @@ func Union(first, second []string) []string {
 
 	return merged
 }
+
+// GetAxis 获取轴 常用于写入Excel
+func GetAxis(row int) string {
+	var Letters = []string{"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+	result := Letters[row%26]
+	row = row / 26
+	for row > 0 {
+		row = row - 1
+		result = Letters[row%26] + result
+		row = row / 26
+	}
+	return result
+}
