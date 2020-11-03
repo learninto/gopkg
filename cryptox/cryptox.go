@@ -15,6 +15,7 @@ func Sha256Encode(param string) string {
 	return fmt.Sprintf("%x", sum)
 }
 
+// Crc32IEEE
 func Crc32IEEE(data []byte) uint32 {
 	return crc32.ChecksumIEEE(data)
 }
