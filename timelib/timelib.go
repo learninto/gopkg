@@ -76,3 +76,16 @@ func GetCurDayTime() time.Time {
 }
 
 /******************************************************************************/
+
+// GetLastMonthStartEnd 获取上个月开始结束时间
+func GetLastMonthStartEnd() (lastMonthStart, lastMonthEnd time.Time) {
+	now := time.Now()
+	lastMonthFirstDay := now.AddDate(0, -1, -now.Day()+1)
+	lastMonthStart = time.Date(lastMonthFirstDay.Year(), lastMonthFirstDay.Month(), lastMonthFirstDay.Day(), 0, 0, 0, 0, now.Location())
+
+	lastMonthEndDay := lastMonthFirstDay.AddDate(0, 1, -1)
+	lastMonthEnd = time.Date(lastMonthEndDay.Year(), lastMonthEndDay.Month(), lastMonthEndDay.Day(), 23, 59, 59, 0, now.Location())
+	return
+}
+
+/******************************************************************************/
